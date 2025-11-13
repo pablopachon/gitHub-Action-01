@@ -7,3 +7,5 @@ jobs:
       steps:
         - name: milog date
           run: date
+        #- name: milog whoami
+        #  run: whoami
