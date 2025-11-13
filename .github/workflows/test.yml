@@ -9,6 +9,7 @@ jobs:
       - name: milog whoami
         run: whoami
   log-node-version:
+    needs: milog-date
     runs-on: ubuntu-latest
     steps:
       - name: log node version
