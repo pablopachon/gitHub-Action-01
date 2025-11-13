@@ -1,0 +1,11 @@
+name: run php 
+on: push
+jobs: 
+  install-php: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: nanasess/setup-php@v4
+        with:
+          php-version: '8.2'
+      - run: php my_script.php
