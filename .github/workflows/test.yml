@@ -2,10 +2,9 @@ name: test
 on: push
 jobs: 
   log-date: 
-    propiedad:
-      runs-on: ubuntu
-      steps:
-        - name: milog date
-          run: date
+    runs-on: ubuntu
+    steps:
+      - name: milog date
+        run: date
         #- name: milog whoami
         #  run: whoami
