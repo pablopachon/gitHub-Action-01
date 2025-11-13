@@ -1,0 +1,9 @@
+name: test 
+on: push
+jobs: 
+  log-date: 
+    propiedad:
+      runs-on: ubuntu
+      steps:
+        - name: milog date
+          run: date
