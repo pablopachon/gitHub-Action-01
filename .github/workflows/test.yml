@@ -4,13 +4,15 @@ jobs:
   log-date: 
     runs-on: ubuntu-latest
     steps:
-      - name: milog date
-        run: date
-      - name: milog whoami
-        run: whoami
+      - name: create date
+        run: date >> date.txt
+      - name: read date
+        run: cat date.txt
   log-node-version:
     needs: milog-date
     runs-on: ubuntu-latest
     steps:
       - name: log node version
         run: node --version   
+      - name: log dir
+        run: ls -la
