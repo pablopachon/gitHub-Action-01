@@ -8,4 +8,6 @@ jobs:
       - uses: nanasess/setup-php@v4
         with:
           php-version: '8.2'
+      - name: write php file
+        run: echo "<?php echo 'Hello, PHP!'; ?>" > my_script.php
       - run: php my_script.php
