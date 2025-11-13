@@ -9,7 +9,7 @@ jobs:
       - name: read date
         run: cat date.txt
   log-node-version:
-    needs: milog-date
+    needs: log-date
     runs-on: ubuntu-latest
     steps:
       - name: log node version
