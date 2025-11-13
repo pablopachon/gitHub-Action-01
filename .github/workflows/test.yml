@@ -8,3 +8,8 @@ jobs:
         run: date
       - name: milog whoami
         run: whoami
+  log-node-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: log node version
+        run: node --version   
